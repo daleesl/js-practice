@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="Calculator  d-flex justify-content-center align-items-center vh-100">
+        <div class="container shadow-lg rounded-2 text-white p-5 m-5 bg-light" style="width: 700px;">
+            <div class="row">
+                <div class="col-12">
+                    <input id="display" class="w-100 p-4 shadow-lg border-0 rounded-4 text-dark fs-3" readonly>
+                </div>
+            </div>
+
+            <div class="row keys">
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3 shadow rounded-4" onclick="appendNum('7')">7</button>
+                </div>
+                <div class="col-3 p-3">
+                    <button class="btn fs-3 shadow rounded-4" onclick="appendNum('8')">8</button>
+                </div>
+                <div class="col-3 p-3">
+                    <button class="btn fs-3 shadow rounded-4" onclick="appendNum('9')">9</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn operation bg-black text-white fs-3 rounded-4" onclick="appendNum('+')">+</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3  shadow rounded-4" onclick="appendNum('4')">4</button>
+                </div>
+                <div class="col-3 p-3">
+                    <button class="btn fs-3  shadow rounded-4" onclick="appendNum('5')">5</button>
+                </div>
+                <div class="col-3 p-3">
+                    <button class="btn fs-3  shadow rounded-4" onclick="appendNum('6')">6</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn operation bg-black text-white fs-3 rounded-4" onclick="appendNum('-')">-</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3  shadow rounded-4" onclick="appendNum('1')">1</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3  shadow rounded-4" onclick="appendNum('2')">2</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3  shadow rounded-4" onclick="appendNum('3')">3</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn operation bg-black text-white fs-3 rounded-4" onclick="appendNum('*')">x</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3 shadow rounded-4" onclick="appendNum('0')">0</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3 shadow rounded-4" onclick="appendNum('.')">.</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn fs-3 shadow rounded-4" onclick="calculate()">=</button>
+                </div>
+
+                <div class="col-3 p-3">
+                    <button class="btn operation bg-black text-white fs-3 rounded-4" onclick="appendNum('/')">/</button>
+                </div>
+                
+                <div class="col-3 p-3">
+                    <button class="btn operation bg-black text-white fs-3 rounded-4" onclick="clearDisplay()">C</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    <script src="script.js"></script>        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
